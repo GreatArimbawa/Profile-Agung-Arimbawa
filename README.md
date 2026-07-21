@@ -31,3 +31,8 @@ Then visit `http://localhost:8000`.
 ## Important
 
 The contact form uses `mailto:` because GitHub Pages is static and does not provide a backend. No visitor data is stored by the website.
+
+
+## Gallery editor
+
+Open the deployed site with `?gallery=edit#gallery` to preview local uploads. See `GALLERY_UPLOAD_GUIDE.md` for permanent GitHub Pages publishing steps.

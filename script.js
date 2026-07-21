@@ -1,139 +1,139 @@
 "use strict";
 
 const skills = [
-  { code: "LM", title: "Lean Manufacturing", text: "Waste reduction, standard work, Kaizen, productivity, and cost improvement.", level: 94, accent: "rgba(59,130,246,.38)" },
-  { code: "PE", title: "Process Engineering", text: "Cycle time, process flow, bottleneck analysis, layout, and line readiness.", level: 96, accent: "rgba(20,184,166,.35)" },
-  { code: "OEE", title: "OEE & KPI Control", text: "Availability, performance, quality, downtime, capacity, and management visibility.", level: 95, accent: "rgba(34,197,94,.32)" },
-  { code: "RCA", title: "RCA & CAPA", text: "5 Why, Fishbone, corrective action, TFT coordination, and prevention routines.", level: 94, accent: "rgba(245,158,11,.3)" },
-  { code: "LB", title: "Line Balancing", text: "Workload distribution, bottleneck removal, manpower utilization, and takt alignment.", level: 91, accent: "rgba(59,130,246,.35)" },
-  { code: "PC", title: "Production Control", text: "Daily execution, scheduling support, manpower planning, material readiness, and output control.", level: 93, accent: "rgba(20,184,166,.3)" },
-  { code: "QA", title: "Quality Systems", text: "QC checkpoints, process discipline, missed-process prevention, rework, and escalation.", level: 91, accent: "rgba(239,68,68,.27)" },
-  { code: "DA", title: "Data Analysis", text: "KPI tracking, trend analysis, management reporting, and data-led prioritization.", level: 88, accent: "rgba(59,130,246,.34)" },
-  { code: "PM", title: "Project Management", text: "Scope, schedules, milestones, risks, cross-functional actions, and follow-up.", level: 89, accent: "rgba(245,158,11,.28)" },
-  { code: "DX", title: "Digital Manufacturing", text: "Production portals, monitoring concepts, skill matrix history, and management dashboards.", level: 84, accent: "rgba(20,184,166,.33)" },
-  { code: "PP", title: "Production Planning", text: "Planning support, material coordination, purchasing follow-up, and budget input.", level: 89, accent: "rgba(34,197,94,.28)" },
-  { code: "LD", title: "Leadership", text: "Team alignment, abnormality response, operator standards, and cross-functional execution.", level: 92, accent: "rgba(59,130,246,.36)" }
+  { code: "LM", title: "Lean Manufacturing", text: "Improve flow, eliminate waste, establish standard work, strengthen productivity, and support disciplined continuous improvement.", level: 94, accent: "rgba(59,130,246,.38)" },
+  { code: "PE", title: "Process Engineering", text: "Analyze process capability, cycle time, production flow, bottlenecks, layouts, operating methods, and readiness conditions.", level: 96, accent: "rgba(20,184,166,.35)" },
+  { code: "OEE", title: "OEE & KPI Management", text: "Manage availability, performance, quality, downtime, capacity, output, losses, and operational visibility.", level: 95, accent: "rgba(34,197,94,.32)" },
+  { code: "RCA", title: "RCA & CAPA", text: "Identify systemic causes through structured analysis and convert findings into corrective, preventive, and control actions.", level: 94, accent: "rgba(245,158,11,.3)" },
+  { code: "CF", title: "Capacity & Flow Optimization", text: "Balance workloads, remove constraints, improve resource utilization, align capacity with demand, and stabilize flow.", level: 91, accent: "rgba(59,130,246,.35)" },
+  { code: "PC", title: "Production Control", text: "Strengthen daily execution, scheduling, workforce allocation, material readiness, output control, and escalation routines.", level: 93, accent: "rgba(20,184,166,.3)" },
+  { code: "QS", title: "Quality Systems", text: "Build process controls, verification points, defect-prevention routines, traceability, rework controls, and escalation standards.", level: 91, accent: "rgba(239,68,68,.27)" },
+  { code: "DA", title: "Data Analysis", text: "Convert operational data into trends, priorities, management reports, and evidence-based decisions.", level: 88, accent: "rgba(59,130,246,.34)" },
+  { code: "PM", title: "Project Management", text: "Define scope, milestones, ownership, risks, action plans, and cross-functional follow-up for operational improvements.", level: 89, accent: "rgba(245,158,11,.28)" },
+  { code: "DM", title: "Digital Manufacturing", text: "Develop systems that improve production visibility, workforce control, traceability, KPI monitoring, and management reporting.", level: 84, accent: "rgba(20,184,166,.33)" },
+  { code: "PP", title: "Production Planning", text: "Support production plans through capacity analysis, resource coordination, material alignment, schedule control, and cost awareness.", level: 89, accent: "rgba(34,197,94,.28)" },
+  { code: "CL", title: "Cross-functional Leadership", text: "Align engineering, production, quality, planning, materials, and management around shared performance targets.", level: 92, accent: "rgba(59,130,246,.36)" }
 ];
 
 const projects = [
   {
-    id: "assembly-output",
+    id: "capacity-improvement",
     category: "Process Engineering",
-    title: "Laptop Assembly Capacity Improvement",
-    summary: "Redesigned production readiness and operating flow to increase daily output and line capacity in electronics assembly.",
-    metric: "+42% output",
+    title: "Manufacturing Capacity Improvement",
+    summary: "Redesigned production flow, operating readiness, and performance controls to increase throughput and available capacity.",
+    metric: "+42% throughput",
     period: "2025–2026",
     code: "CAPACITY / 01",
-    challenge: "Assembly output was constrained by process flow, readiness, manpower utilization, and inconsistent operating standards.",
-    approach: "Reviewed line flow, operating readiness, manpower use, tooling needs, quality checkpoints, and daily execution constraints.",
-    solution: "Optimized process flow, strengthened line readiness, supported manpower allocation, and standardized operating routines.",
-    impact: "Daily output increased from 1,200 to 1,700 units, while line capacity increased from 420 to 630 units per day per line.",
-    tags: ["Line Balancing", "Capacity", "Standard Work", "Electronics Assembly"],
+    challenge: "Production output was constrained by uneven process flow, readiness gaps, workforce utilization, and inconsistent operating standards.",
+    approach: "Analyzed the end-to-end production flow, cycle-time distribution, workforce utilization, operating readiness, tooling requirements, quality controls, and recurring execution constraints.",
+    solution: "Rebalanced production activities, strengthened readiness controls, improved resource allocation, clarified process ownership, and standardized critical operating routines.",
+    impact: "Daily output increased from 1,200 to 1,700 units, while production capacity increased from 420 to 630 units per day per line.",
+    tags: ["Capacity Planning", "Process Flow", "Line Balancing", "Standard Work"],
     gradient: "linear-gradient(135deg,#172554 0%,#1d4ed8 48%,#0f766e 100%)"
   },
   {
     id: "oee-recovery",
     category: "Operational Excellence",
     title: "OEE & Downtime Recovery",
-    summary: "Strengthened material control and abnormality response to recover equipment effectiveness and operating stability.",
+    summary: "Strengthened production readiness, operational controls, and abnormality response to restore equipment effectiveness and operating stability.",
     metric: "85.2% OEE",
     period: "2025–2026",
     code: "OEE / 02",
-    challenge: "Downtime reached 79.2 hours and OEE remained at 69.4%, limiting production reliability.",
-    approach: "Mapped downtime drivers, reviewed material checking and readiness, and tightened abnormality-response discipline.",
-    solution: "Improved material checker controls, planning visibility, readiness routines, and shop-floor response standards.",
-    impact: "Downtime fell from 79.2 hours to 3.4 hours, while OEE improved from 69.4% to 85.2%.",
-    tags: ["OEE", "Downtime", "Material Readiness", "KPI Control"],
+    challenge: "Downtime reached 79.2 hours while OEE remained at 69.4%, reducing operational reliability and limiting production performance.",
+    approach: "Mapped major downtime drivers, reviewed readiness conditions, analyzed recurring operational interruptions, and evaluated response routines.",
+    solution: "Strengthened readiness verification, planning visibility, operational ownership, abnormality escalation, and shop-floor response standards.",
+    impact: "Downtime decreased from 79.2 hours to 3.4 hours, while OEE improved from 69.4% to 85.2%.",
+    tags: ["OEE", "Downtime Reduction", "Operational Reliability", "Performance Control"],
     gradient: "linear-gradient(135deg,#052e2b 0%,#0f766e 48%,#1d4ed8 100%)"
   },
   {
     id: "quality-reduction",
-    category: "Quality Improvement",
+    category: "Quality Systems",
     title: "Missed Process & Rework Reduction",
-    summary: "Built a tighter corrective-action system to prevent missed processes and recurring assembly defects.",
+    summary: "Built a stronger process-control and corrective-action system to prevent missed operations, recurring defects, and avoidable rework.",
     metric: "−94% missed process",
     period: "2025–2026",
     code: "QUALITY / 03",
-    challenge: "Missed process and rework rates created avoidable quality risk, production disruption, and cost.",
-    approach: "Used RCA, CAPA, TFT coordination, defect escalation, and process-control checkpoints to attack recurring causes.",
-    solution: "Standardized critical process controls, strengthened corrective-action execution, and improved defect escalation routines.",
-    impact: "Missed process decreased from 1.25% to 0.07%; rework/NG decreased from 2.00% to 0.24%.",
-    tags: ["RCA", "CAPA", "TFT", "Quality Control"],
+    challenge: "Missed processes and recurring defects created quality risk, production disruption, rework, and additional manufacturing cost.",
+    approach: "Applied RCA, CAPA, cross-functional task-force coordination, defect escalation, process verification, and control-point analysis.",
+    solution: "Standardized critical process controls, clarified verification responsibilities, strengthened corrective-action execution, and established disciplined escalation routines.",
+    impact: "Missed process decreased from 1.25% to 0.07%, while rework and nonconforming output decreased from 2.00% to 0.24%.",
+    tags: ["RCA", "CAPA", "Process Control", "Quality Improvement"],
     gradient: "linear-gradient(135deg,#450a0a 0%,#b91c1c 45%,#7c3aed 100%)"
   },
   {
     id: "cost-optimization",
     category: "Operational Excellence",
-    title: "Production Cost Optimization",
-    summary: "Combined scale-up, resource optimization, material control, and process discipline to lower manufacturing cost.",
-    metric: "−91% cost/gram",
+    title: "Manufacturing Cost Optimization",
+    summary: "Combined production scale-up, resource optimization, material control, and operating discipline to reduce unit manufacturing cost.",
+    metric: "−91% unit cost",
     period: "2022–2024",
     code: "COST / 04",
-    challenge: "Pilot-level production had a high unit cost and insufficient operating scale for sustainable commercial output.",
-    approach: "Reviewed equipment needs, production method, manpower setup, material use, resource allocation, and cost structure.",
-    solution: "Supported machine acquisition, production scale-up, process stabilization, and stronger cost discipline.",
-    impact: "Output scaled from 200 g/day to 25 kg/day while cost decreased from Rp1,011/gram to Rp93/gram.",
-    tags: ["Scale-up", "Cost Reduction", "Resource Optimization", "Production Management"],
+    challenge: "Pilot-scale production had a high unit cost, limited operating capacity, and an operating model not yet suitable for sustainable commercial output.",
+    approach: "Reviewed equipment requirements, production methods, workforce structure, material consumption, resource allocation, capacity, and cost drivers.",
+    solution: "Supported equipment investment, redesigned the operating method, established required resources, stabilized the manufacturing process, and strengthened cost control.",
+    impact: "Production output scaled from 200 grams per day to 25 kilograms per day, while unit cost decreased from Rp1,011 per gram to Rp93 per gram.",
+    tags: ["Production Scale-up", "Cost Reduction", "Resource Optimization", "Production Management"],
     gradient: "linear-gradient(135deg,#422006 0%,#b45309 48%,#065f46 100%)"
   },
   {
-    id: "production-portal",
+    id: "digital-control",
     category: "Digital Manufacturing",
-    title: "Production Portal & Skill Matrix",
-    summary: "Developed digital control concepts for attendance visibility, skill history, production monitoring, and management reporting.",
+    title: "Digital Production Control System",
+    summary: "Developed an integrated digital-control concept for workforce visibility, capability records, production monitoring, and management reporting.",
     metric: "1 control ecosystem",
     period: "2025–2026",
     code: "DIGITAL / 05",
-    challenge: "Production information was distributed across operational routines, reducing visibility and traceability for leaders.",
-    approach: "Mapped key information needs across attendance, absence, skill development, monitoring, and management reporting.",
-    solution: "Developed production portal concepts and control routines connecting workforce and production visibility.",
-    impact: "Created a practical foundation for faster operational visibility, skill-history control, and standardized management reporting.",
-    tags: ["Production Portal", "Skill Matrix", "Dashboard", "Digital Control"],
+    challenge: "Operational information was distributed across separate routines and records, limiting visibility, traceability, and management response.",
+    approach: "Mapped information requirements across workforce attendance, capability development, production monitoring, operational performance, and management reporting.",
+    solution: "Developed a production-control portal concept connecting workforce data, skill records, operational monitoring, and standardized management reporting.",
+    impact: "Created a foundation for faster operational visibility, improved traceability, stronger workforce-capability control, and more consistent reporting.",
+    tags: ["Digital Manufacturing", "Production Control", "Skill Matrix", "Management Dashboard"],
     gradient: "linear-gradient(135deg,#111827 0%,#1e3a8a 50%,#0f766e 100%)"
   },
   {
-    id: "paint-flow",
+    id: "process-flow",
     category: "Process Engineering",
-    title: "Paint Production Flow Improvement",
-    summary: "Improved process methods and production flow to gain output without additional equipment investment.",
-    metric: "+12.5% output",
+    title: "Manufacturing Process Flow Improvement",
+    summary: "Improved production methods and process flow to increase throughput without additional equipment investment.",
+    metric: "+12.5% throughput",
     period: "2017–2022",
     code: "FLOW / 06",
-    challenge: "The production system needed higher throughput, but capital equipment expansion was not the preferred path.",
-    approach: "Reviewed workflow, methods, constraints, process deviations, and opportunities to improve existing capacity.",
-    solution: "Improved work methods and production flow using the installed equipment base.",
-    impact: "Output increased from 2.0 tons/day to 2.25 tons/day without adding machines.",
-    tags: ["Process Flow", "Methods Engineering", "Capacity", "Paint Manufacturing"],
+    challenge: "The production system required additional throughput while capital-equipment expansion was not the preferred solution.",
+    approach: "Reviewed workflow, operating methods, process constraints, equipment utilization, technical deviations, and available capacity.",
+    solution: "Redesigned work methods and improved process flow to use the existing equipment base more effectively.",
+    impact: "Production output increased from 2.0 tons per day to 2.25 tons per day without adding new machines.",
+    tags: ["Process Flow", "Methods Engineering", "Capacity Improvement", "Asset Utilization"],
     gradient: "linear-gradient(135deg,#2e1065 0%,#6d28d9 48%,#1d4ed8 100%)"
   },
   {
     id: "process-nonconformity",
-    category: "Quality Improvement",
+    category: "Quality Systems",
     title: "Process Nonconformity Reduction",
-    summary: "Applied root-cause analysis and process standardization to eliminate recurring nonconformities.",
+    summary: "Applied root-cause analysis, corrective action, and process standardization to eliminate recurring operational nonconformities.",
     metric: "−94% cases",
     period: "2017–2022",
     code: "CONTROL / 07",
-    challenge: "Recurring process nonconformities created technical deviations and inconsistent operating results.",
-    approach: "Investigated causes, reviewed workflows, defined corrective actions, and improved technical documentation.",
-    solution: "Implemented corrective actions and standardized improved process methods across operations.",
+    challenge: "Recurring process nonconformities caused technical deviations, inconsistent operating results, and repeated corrective work.",
+    approach: "Investigated recurring causes, reviewed process conditions and workflows, defined corrective actions, and strengthened technical documentation.",
+    solution: "Implemented systemic corrective actions and standardized improved process methods across production operations.",
     impact: "Process nonconformities decreased from 96 cases per year to 6 cases per year.",
-    tags: ["Process Control", "RCA", "Standardization", "Quality"],
+    tags: ["Process Control", "RCA", "Standardization", "Quality Systems"],
     gradient: "linear-gradient(135deg,#1f2937 0%,#334155 46%,#0f766e 100%)"
   },
   {
     id: "kpi-control",
     category: "Digital Manufacturing",
-    title: "Manufacturing KPI Control",
-    summary: "Structured capacity and missed-process tracking to keep daily operations aligned with management targets.",
+    title: "Manufacturing KPI Management System",
+    summary: "Structured performance tracking to keep daily operations aligned with capacity, quality, and management targets.",
     metric: "455.68 units/day/line",
     period: "2026",
     code: "KPI / 08",
-    challenge: "Leaders needed reliable visibility of production capacity and process quality against defined targets.",
-    approach: "Established KPI tracking routines around capacity, missed process, output, and operational follow-up.",
-    solution: "Connected daily performance data with management review and corrective-action discipline.",
-    impact: "NBAX capacity averaged 455.68 units/day/line against a 420 target, while missed process remained below the 0.25% target during Jan–Apr 2026.",
-    tags: ["KPI", "Capacity", "Management Reporting", "Performance Control"],
+    challenge: "Operational leaders required reliable visibility of production capacity, process quality, output, and performance against defined targets.",
+    approach: "Established KPI definitions, tracking routines, review frequencies, escalation criteria, and ownership across key manufacturing indicators.",
+    solution: "Connected daily operational data with structured management reviews, performance visibility, and corrective-action discipline.",
+    impact: "Average capacity reached 455.68 units per day per line against a target of 420, while missed process remained below the 0.25% target during January–April 2026.",
+    tags: ["KPI Management", "Capacity Control", "Management Reporting", "Data-driven Decisions"],
     gradient: "linear-gradient(135deg,#082f49 0%,#0369a1 48%,#14b8a6 100%)"
   }
 ];
@@ -145,9 +145,10 @@ const career = [
     location: "Jakarta",
     period: "Jan 2025 — Present",
     points: [
-      "Lead process-engineering improvements across laptop assembly operations.",
-      "Improved output, line capacity, OEE, downtime, missed process, rework, and unit cost.",
-      "Developed production portal concepts and control routines for operational visibility."
+      "Lead cross-functional process-engineering improvements across high-volume manufacturing operations.",
+      "Strengthen production flow, operating readiness, workforce utilization, quality controls, tooling readiness, and corrective-action execution.",
+      "Improve throughput, capacity, OEE, downtime, missed process, rework, and unit cost through system-level improvement and KPI control.",
+      "Develop digital production-control concepts for workforce visibility, capability records, operational monitoring, and management reporting."
     ]
   },
   {
@@ -156,9 +157,10 @@ const career = [
     location: "Sukabumi, West Java",
     period: "Sep 2022 — Dec 2024",
     points: [
-      "Managed planning, daily execution, output, manpower, materials, purchasing coordination, and cost input.",
-      "Scaled production from 200 g/day pilot output to 25 kg/day.",
-      "Reduced production cost per gram by 91%."
+      "Managed production planning, daily execution, output control, workforce allocation, material coordination, purchasing follow-up, cost estimation, and management reporting.",
+      "Built the operating structure required to scale a pilot process into a stable commercial manufacturing operation.",
+      "Increased production output from 200 grams per day to 25 kilograms per day and reduced unit manufacturing cost by 91%.",
+      "Coordinated with commercial and technical functions on production feasibility, quality requirements, safety conditions, and new-product readiness."
     ]
   },
   {
@@ -167,9 +169,10 @@ const career = [
     location: "Cimahi, West Java",
     period: "Aug 2017 — Aug 2022",
     points: [
-      "Improved output by 12.5% without additional machines.",
-      "Reduced process nonconformities from 96 to 6 cases per year.",
-      "Supported technical deviations, equipment-related problems, and operating abnormalities."
+      "Improved production throughput by 12.5% without additional equipment by redesigning work methods and process flow.",
+      "Reduced recurring process nonconformities from 96 cases per year to 6 cases per year.",
+      "Provided technical support during process deviations, quality issues, equipment-related problems, and abnormal operating conditions.",
+      "Reviewed workflows, identified improvement opportunities, established schedules, monitored milestones, and maintained technical documentation."
     ]
   },
   {
@@ -178,8 +181,8 @@ const career = [
     location: "Cimahi, West Java",
     period: "Jun 2015 — Aug 2017",
     points: [
-      "Maintained process-control documentation and updated procedures after process changes.",
-      "Supported product checks, rework, measurement, recording, and shop-floor process discipline."
+      "Maintained process-control documentation and updated operating procedures following process changes.",
+      "Supported process verification, product checks, measurement activities, rework control, operational recording, and shop-floor compliance."
     ]
   },
   {
@@ -188,8 +191,8 @@ const career = [
     location: "Sukabumi, West Java",
     period: "Nov 2014 — Feb 2015",
     points: [
-      "Maintained quality-test records and checked raw materials and finished goods.",
-      "Reviewed data accuracy and escalated quality concerns to supervisors."
+      "Maintained quality-test records and verified incoming materials and finished products against defined requirements.",
+      "Reviewed data accuracy, identified quality concerns, and escalated nonconformities to the appropriate supervisors."
     ]
   }
 ];
@@ -421,9 +424,205 @@ function setupCarousel() {
   qs("#principlesCarousel").addEventListener("mouseleave", () => { timer = setInterval(() => goTo(index + 1), 6500); });
 }
 
+const GALLERY_DB_NAME = "agungPortfolioGallery";
+const GALLERY_STORE_NAME = "images";
+const GALLERY_MAX_IMAGES = 24;
+const GALLERY_MAX_BYTES = 12 * 1024 * 1024;
+let galleryObjectUrls = [];
+
+function galleryEditModeEnabled() {
+  return new URLSearchParams(window.location.search).get("gallery") === "edit";
+}
+
+function openGalleryDatabase() {
+  return new Promise((resolve, reject) => {
+    if (!("indexedDB" in window)) {
+      reject(new Error("This browser does not support local gallery storage."));
+      return;
+    }
+    const request = indexedDB.open(GALLERY_DB_NAME, 1);
+    request.onupgradeneeded = () => {
+      const database = request.result;
+      if (!database.objectStoreNames.contains(GALLERY_STORE_NAME)) {
+        database.createObjectStore(GALLERY_STORE_NAME, { keyPath: "id", autoIncrement: true });
+      }
+    };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error || new Error("Unable to open gallery storage."));
+  });
+}
+
+async function readGalleryImages() {
+  const database = await openGalleryDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(GALLERY_STORE_NAME, "readonly");
+    const request = transaction.objectStore(GALLERY_STORE_NAME).getAll();
+    request.onsuccess = () => resolve(request.result.sort((a, b) => a.createdAt - b.createdAt));
+    request.onerror = () => reject(request.error || new Error("Unable to read gallery images."));
+    transaction.oncomplete = () => database.close();
+  });
+}
+
+async function storeGalleryImage(file) {
+  const database = await openGalleryDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(GALLERY_STORE_NAME, "readwrite");
+    const request = transaction.objectStore(GALLERY_STORE_NAME).add({
+      name: file.name,
+      type: file.type,
+      size: file.size,
+      createdAt: Date.now() + Math.random(),
+      blob: file
+    });
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error || new Error(`Unable to store ${file.name}.`));
+    transaction.oncomplete = () => database.close();
+  });
+}
+
+async function deleteGalleryImage(id) {
+  const database = await openGalleryDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(GALLERY_STORE_NAME, "readwrite");
+    const request = transaction.objectStore(GALLERY_STORE_NAME).delete(id);
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error || new Error("Unable to remove image."));
+    transaction.oncomplete = () => database.close();
+  });
+}
+
+async function clearGalleryImages() {
+  const database = await openGalleryDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(GALLERY_STORE_NAME, "readwrite");
+    const request = transaction.objectStore(GALLERY_STORE_NAME).clear();
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error || new Error("Unable to clear images."));
+    transaction.oncomplete = () => database.close();
+  });
+}
+
+function friendlyGalleryCaption(filename) {
+  return filename
+    .replace(/\.[^.]+$/, "")
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b\w/g, letter => letter.toUpperCase()) || "Manufacturing project";
+}
+
+async function renderLocalGalleryImages() {
+  const grid = qs("#galleryGrid");
+  const status = qs("#galleryStatus");
+  if (!grid) return;
+
+  galleryObjectUrls.forEach(url => URL.revokeObjectURL(url));
+  galleryObjectUrls = [];
+  qsa("[data-local-gallery-image]", grid).forEach(item => item.remove());
+
+  try {
+    const records = await readGalleryImages();
+    const editing = galleryEditModeEnabled();
+    records.forEach((record, index) => {
+      const imageUrl = URL.createObjectURL(record.blob);
+      galleryObjectUrls.push(imageUrl);
+      const figure = document.createElement("figure");
+      const sizeClass = index % 5 === 0 ? "gallery-wide" : index % 4 === 0 ? "gallery-tall" : "";
+      figure.className = `gallery-item reveal is-visible ${sizeClass}`.trim();
+      figure.dataset.localGalleryImage = String(record.id);
+      figure.innerHTML = `
+        <img src="${imageUrl}" alt="${friendlyGalleryCaption(record.name)}" loading="lazy">
+        <figcaption>${friendlyGalleryCaption(record.name)}</figcaption>
+        ${editing ? `<button class="gallery-delete" type="button" aria-label="Remove ${friendlyGalleryCaption(record.name)}" data-gallery-delete="${record.id}">×</button>` : ""}
+      `;
+      grid.appendChild(figure);
+    });
+
+    if (status) {
+      status.textContent = records.length
+        ? `${records.length} local image${records.length === 1 ? "" : "s"} available in this browser.`
+        : "No local images added yet.";
+    }
+
+    qsa("[data-gallery-delete]", grid).forEach(button => {
+      button.addEventListener("click", async event => {
+        event.preventDefault();
+        event.stopPropagation();
+        await deleteGalleryImage(Number(button.dataset.galleryDelete));
+        await renderLocalGalleryImages();
+      });
+    });
+  } catch (error) {
+    if (status) status.textContent = error.message;
+  }
+}
+
+async function addGalleryFiles(fileList) {
+  const status = qs("#galleryStatus");
+  const files = [...fileList];
+  if (!files.length) return;
+
+  try {
+    const existing = await readGalleryImages();
+    const remainingSlots = Math.max(0, GALLERY_MAX_IMAGES - existing.length);
+    const accepted = files
+      .filter(file => file.type.startsWith("image/") && file.size <= GALLERY_MAX_BYTES)
+      .slice(0, remainingSlots);
+    const rejected = files.length - accepted.length;
+
+    if (!remainingSlots) {
+      if (status) status.textContent = `Local gallery limit reached (${GALLERY_MAX_IMAGES} images).`;
+      return;
+    }
+
+    if (status) status.textContent = `Adding ${accepted.length} image${accepted.length === 1 ? "" : "s"}…`;
+    for (const file of accepted) await storeGalleryImage(file);
+    await renderLocalGalleryImages();
+    if (rejected && status) {
+      status.textContent += ` ${rejected} file${rejected === 1 ? " was" : "s were"} skipped because of type, size, or gallery limits.`;
+    }
+  } catch (error) {
+    if (status) status.textContent = error.message;
+  }
+}
+
+function setupGalleryEditor() {
+  const editor = qs("#galleryEditor");
+  const input = qs("#galleryFileInput");
+  const dropzone = qs("#galleryDropzone");
+  const clearButton = qs("#clearGalleryUploads");
+  if (!editor || !input || !dropzone || !clearButton) return;
+
+  if (galleryEditModeEnabled()) {
+    editor.hidden = false;
+    document.body.classList.add("gallery-edit-mode");
+    input.addEventListener("change", async () => {
+      await addGalleryFiles(input.files);
+      input.value = "";
+    });
+    ["dragenter", "dragover"].forEach(type => dropzone.addEventListener(type, event => {
+      event.preventDefault();
+      dropzone.classList.add("is-dragging");
+    }));
+    ["dragleave", "drop"].forEach(type => dropzone.addEventListener(type, event => {
+      event.preventDefault();
+      dropzone.classList.remove("is-dragging");
+    }));
+    dropzone.addEventListener("drop", event => addGalleryFiles(event.dataTransfer.files));
+    clearButton.addEventListener("click", async () => {
+      if (!window.confirm("Remove all locally uploaded gallery images from this browser?")) return;
+      await clearGalleryImages();
+      await renderLocalGalleryImages();
+    });
+  }
+
+  renderLocalGalleryImages();
+}
+
 function setupContactForm() {
   const form = qs("#contactForm");
   const status = qs("#formStatus");
+  if (!form || !status) return;
   form.addEventListener("submit", event => {
     event.preventDefault();
     if (!form.checkValidity()) {
@@ -533,6 +732,7 @@ function init() {
   setupMobileMenu();
   setupModal();
   setupCarousel();
+  setupGalleryEditor();
   setupContactForm();
   setupParticles();
   setupMagneticButtons();
