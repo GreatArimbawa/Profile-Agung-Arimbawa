@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#082f49"/><stop offset=".5" stop-color="#0369a1"/><stop offset="1" stop-color="#0f766e"/></linearGradient><pattern id="p" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".08"/></pattern></defs>
+  <rect width="800" height="800" fill="url(#g)"/><rect width="800" height="800" fill="url(#p)"/>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-opacity=".72"><path d="M125 560V315l160-90v90l165-90v125h210v210Z"/><path d="M205 560V430h110v130M500 430h90v130"/><circle cx="565" cy="200" r="80"/><path d="M565 120V75M565 325v-45M485 200h-45M690 200h-45M510 145l-32-32M655 290l-32-32M620 145l32-32M510 255l-32 32"/></g>
+  <text x="105" y="680" fill="#fff" font-family="Arial" font-size="56" font-weight="700">DIGITAL FACTORY</text><text x="108" y="730" fill="#bae6fd" font-family="Arial" font-size="20">Portal • Dashboard • Skill Matrix</text>
+</svg>
