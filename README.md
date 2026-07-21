@@ -1,39 +1,26 @@
-# Agung Arimbawa — Manufacturing Excellence Portfolio
+# Agung Arimbawa — Executive Light Portfolio
 
-Static portfolio website built with pure HTML, CSS, and JavaScript. No build step, framework, or package installation is required.
+Premium static portfolio for GitHub Pages built with HTML, CSS, and JavaScript.
 
-## Preview locally
+## Highlights
 
-Open `index.html` directly, or run a lightweight local server:
+- Executive Light Theme inspired by Apple, McKinsey, Linear Light, Notion, and Rivian
+- Industry-agnostic manufacturing copywriting
+- Responsive layout for desktop, tablet, and mobile
+- GSAP + Motion-based micro interactions with reduced-motion support
+- Project filtering and modal case studies
+- KPI counters and expandable career timeline
+- Gallery section with optional owner-only local upload mode
+- GitHub Pages-ready structure (`index.html`, `styles.css`, `script.js`, `.nojekyll`, `404.html`)
 
-```bash
-python -m http.server 8000
-```
+## Gallery owner mode
 
-Then visit `http://localhost:8000`.
+Open the deployed site with:
 
-## Deploy to GitHub Pages
+`?gallery=edit#gallery`
 
-1. Create a new GitHub repository.
-2. Upload every file and folder from this project to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)` folder, then save.
+Example:
 
-## Content you should replace
+`https://username.github.io/repository/?gallery=edit#gallery`
 
-- Replace the portrait placeholder with `assets/profile.jpg` and change the corresponding HTML block to an `<img>`.
-- Replace SVG gallery placeholders in `assets/gallery/` with real, approved factory/project images.
-- Add verified LinkedIn or GitHub URLs if available.
-- Add verified certifications only when certificate details are available.
-- Edit project content in the `projects` array inside `script.js`.
-
-## Important
-
-The contact form uses `mailto:` because GitHub Pages is static and does not provide a backend. No visitor data is stored by the website.
-
-
-## Gallery editor
-
-Open the deployed site with `?gallery=edit#gallery` to preview local uploads. See `GALLERY_UPLOAD_GUIDE.md` for permanent GitHub Pages publishing steps.
-"# Profile-Agung-Arimbawa" 
+In owner mode you can drag and drop or choose multiple images. Uploads are stored locally in the browser with IndexedDB, so they stay visible on the same browser after refresh. See `GALLERY_UPLOAD_GUIDE.md` for details and for the permanent GitHub Pages publishing workflow.

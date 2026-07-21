@@ -4,115 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Agung Arimbawa — Manufacturing Engineering and Operational Excellence professional improving production systems, throughput, OEE, quality, cost, and factory performance." />
-  <meta name="theme-color" content="#07090D" />
+  <meta name="theme-color" content="#FAFAF8" />
   <meta property="og:title" content="Agung Arimbawa — Manufacturing Systems & Operational Excellence" />
   <meta property="og:description" content="Building manufacturing systems that improve throughput, operational reliability, quality, cost, and management control." />
   <meta property="og:type" content="website" />
   <title>Agung Arimbawa | Manufacturing Engineering & Operational Excellence</title>
 
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
   <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
   <header class="site-header" id="siteHeader">
-    <a class="brand" href="#home" aria-label="Agung Arimbawa home">
-      <span class="brand-mark">AA</span>
-      <span class="brand-copy">
-        <strong>Agung Arimbawa</strong>
-        <small>Manufacturing Systems & Operational Excellence</small>
-      </span>
-    </a>
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Agung Arimbawa home">
+        <span class="brand-mark">AA</span>
+        <span class="brand-copy">
+          <strong>Agung Arimbawa</strong>
+          <small>Manufacturing Systems & Operational Excellence</small>
+        </span>
+      </a>
 
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      <a href="#about">Profile</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#projects">Impact</a>
-      <a href="#career">Career</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">Profile</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Impact</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <a class="header-cta" href="Agung-Arimbawa-CV.pdf" download>Download CV</a>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span>
-    </button>
+      <div class="header-actions">
+        <a class="header-link" href="mailto:great.arimbawa@gmail.com">Let’s talk</a>
+        <a class="header-cta" href="Agung-Arimbawa-CV.pdf" download>Download CV <span>↓</span></a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
     <nav aria-label="Mobile navigation">
+      <span class="mobile-menu-label">Navigation</span>
       <a href="#about">Profile</a>
       <a href="#expertise">Expertise</a>
-      <a href="#projects">Impact</a>
-      <a href="#career">Career</a>
+      <a href="#projects">Selected impact</a>
+      <a href="#career">Career journey</a>
       <a href="#contact">Contact</a>
-      <a class="button button-primary" href="Agung-Arimbawa-CV.pdf" download>Download CV</a>
+      <a class="button button-primary" href="Agung-Arimbawa-CV.pdf" download>Download CV <span>↓</span></a>
     </nav>
   </div>
 
   <main>
     <section class="hero" id="home">
-      <canvas id="particleCanvas" aria-hidden="true"></canvas>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow hero-animate">
+            <span class="status-dot"></span>
+            Manufacturing Engineering & Operational Excellence · Indonesia
+          </div>
 
-      <div class="hero-content shell">
-        <div class="eyebrow reveal-up">
-          <span class="status-dot"></span>
-          Manufacturing Engineering & Operational Excellence · Indonesia
+          <h1 class="hero-title hero-animate">
+            Building stronger manufacturing systems.
+            <span>Measurable. Sustainable.</span>
+          </h1>
+
+          <p class="hero-lead hero-animate">
+            Manufacturing engineering and operational excellence professional strengthening production systems across discrete and process manufacturing. I connect engineering, production control, quality, data, and cross-functional execution to improve throughput, OEE, cost, and operating reliability.
+          </p>
+
+          <div class="hero-actions hero-animate">
+            <a class="button button-primary magnetic" href="#projects">
+              Explore selected impact <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-secondary magnetic" href="Agung-Arimbawa-CV.pdf" download>
+              Download CV <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-focus hero-animate" aria-label="Core professional areas">
+            <span>Manufacturing Systems</span>
+            <span>Operational Excellence</span>
+            <span>Continuous Improvement</span>
+            <span>Digital Manufacturing</span>
+          </div>
         </div>
 
-        <h1 class="hero-title reveal-up" style="--delay: .08s">
-          Building manufacturing systems that improve performance—
-          <span class="gradient-text">and sustain it.</span>
-        </h1>
+        <aside class="executive-card hero-animate motion-card" aria-label="Executive profile summary">
+          <div class="executive-card-top">
+            <span class="executive-label">Executive profile</span>
+            <span class="availability"><i></i> Open to opportunities</span>
+          </div>
 
-        <p class="hero-lead reveal-up" style="--delay: .16s">
-          Manufacturing engineering and operational excellence professional with 10+ years of experience strengthening production systems across discrete and process manufacturing environments. I connect process capability, production control, quality systems, operational data, and cross-functional execution to improve throughput, OEE, cost, reliability, and management visibility.
-        </p>
+          <div class="executive-profile">
+            <div class="executive-photo-wrap">
+              <img class="executive-photo" src="assets/profile.jpg" alt="Professional portrait of Agung Arimbawa" />
+            </div>
+            <div>
+              <h2>Agung Arimbawa</h2>
+              <p>Manufacturing Engineering & Operational Excellence Leader</p>
+            </div>
+          </div>
 
-        <div class="hero-roles reveal-up" style="--delay: .22s" aria-label="Core professional areas">
-          <span>Manufacturing Systems</span>
-          <span>Operational Excellence</span>
-          <span>Continuous Improvement</span>
-        </div>
+          <div class="executive-summary">
+            <p>Focused on converting operational complexity into structured manufacturing systems, clear performance controls, aligned teams, and repeatable results.</p>
+          </div>
 
-        <div class="hero-actions reveal-up" style="--delay: .28s">
-          <a class="button button-primary magnetic" href="#projects">
-            Explore selected impact
-            <span aria-hidden="true">↗</span>
+          <div class="executive-details">
+            <div><span>Experience</span><strong>10+ years</strong></div>
+            <div><span>Operating Scope</span><strong>Discrete & process manufacturing</strong></div>
+            <div><span>Location</span><strong>Bandung Regency, West Java</strong></div>
+          </div>
+
+          <a class="executive-contact" href="mailto:great.arimbawa@gmail.com">
+            <span>Discuss an opportunity</span><strong>great.arimbawa@gmail.com</strong><i>→</i>
           </a>
-          <a class="button button-ghost magnetic" href="Agung-Arimbawa-CV.pdf" download>
-            Download CV
-            <span aria-hidden="true">↓</span>
-          </a>
-        </div>
-
-        <div class="hero-proof reveal-up" style="--delay: .36s">
-          <div>
-            <strong>10+ years</strong>
-            <span>manufacturing experience</span>
-          </div>
-          <div>
-            <strong>+42%</strong>
-            <span>throughput improvement</span>
-          </div>
-          <div>
-            <strong>85.2%</strong>
-            <span>OEE achieved</span>
-          </div>
-        </div>
+        </aside>
       </div>
 
-      <div class="hero-side-label" aria-hidden="true">PROCESS • PEOPLE • PERFORMANCE</div>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
-        <span>Scroll</span>
-        <i></i>
-      </a>
+      <div class="shell hero-proof hero-animate">
+        <article><span>Throughput improvement</span><strong>+42%</strong><small>1,200 → 1,700 units/day</small></article>
+        <article><span>Production capacity</span><strong>+50%</strong><small>420 → 630 units/day/line</small></article>
+        <article><span>Operational downtime</span><strong>−96%</strong><small>79.2 → 3.4 hours</small></article>
+        <article><span>OEE achieved</span><strong>85.2%</strong><small>+15.8 percentage points</small></article>
+      </div>
     </section>
 
     <section class="section about-section" id="about">
@@ -124,41 +145,36 @@
         </div>
 
         <div class="about-layout">
-          <article class="portrait-card reveal">
-            <div class="portrait-orbit" aria-hidden="true"></div>
-            <img
-  class="portrait-image"
-  src="assets/profile.jpg"
-  alt="Professional portrait of Agung Arimbawa"
-/>
+          <article class="portrait-card reveal motion-card">
+            <div class="portrait-frame">
+              <img class="portrait-image" src="assets/profile.jpg" alt="Agung Arimbawa" />
+              <span class="portrait-badge">10+ years in manufacturing</span>
+            </div>
             <div class="portrait-meta">
-              <div>
-                <strong>Agung Arimbawa</strong>
-                <span>Bandung Regency, West Java</span>
-              </div>
-              <span class="availability">Available</span>
+              <div><strong>Agung Arimbawa</strong><span>Manufacturing Engineering & Operational Excellence Professional</span></div>
+              <span class="portrait-location">West Java</span>
             </div>
           </article>
 
           <div class="about-content">
             <div class="about-copy reveal">
               <p class="large-copy">My career has developed across quality control, process control, process engineering, and production management. Across each role, the objective has remained consistent: build manufacturing systems that perform reliably under real operating conditions.</p>
-              <p>I approach performance gaps as system problems rather than isolated incidents. I identify constraints, quantify losses, align the relevant functions around root causes, and convert improvements into practical standards, ownership routines, and performance controls that continue to work after the project is completed.</p>
+              <p>I approach performance gaps as system problems rather than isolated incidents. The process begins by understanding actual operating conditions, identifying constraints, quantifying losses, and aligning the relevant functions around root causes. Improvements are then converted into practical standards, operating controls, ownership routines, and performance reviews. The objective is not only to solve the current issue. It is to establish a stronger operating system that continues to perform after the improvement project is completed.</p>
             </div>
 
             <div class="about-cards">
-              <article class="mini-card reveal">
-                <span class="mini-index">A</span>
+              <article class="mini-card reveal motion-card">
+                <span class="mini-index">01</span>
                 <h3>Operational Excellence</h3>
                 <p>Improve throughput, productivity, OEE, quality, cost, and operational reliability through structured performance management and continuous improvement.</p>
               </article>
-              <article class="mini-card reveal">
-                <span class="mini-index">B</span>
+              <article class="mini-card reveal motion-card">
+                <span class="mini-index">02</span>
                 <h3>Manufacturing Systems</h3>
                 <p>Design and strengthen production flow, process controls, capacity, workforce readiness, quality checkpoints, material readiness, and operating standards.</p>
               </article>
-              <article class="mini-card reveal">
-                <span class="mini-index">C</span>
+              <article class="mini-card reveal motion-card">
+                <span class="mini-index">03</span>
                 <h3>Leadership & Execution</h3>
                 <p>Align engineering, production, quality, planning, materials, and management around clear priorities, responsibilities, and measurable results.</p>
               </article>
@@ -183,47 +199,37 @@
 
     <section class="section projects-section" id="projects">
       <div class="shell">
-        <div class="section-heading split-heading reveal">
-          <div>
+        <div class="project-heading-row reveal">
+          <div class="section-heading">
             <span class="section-kicker">03 / Selected impact</span>
             <h2>Manufacturing improvements defined by <span>measurable operational results.</span></h2>
           </div>
           <p>Each case study presents the operating challenge, engineering analysis, implemented manufacturing system, and verified performance impact.</p>
         </div>
 
-        <div class="project-filters reveal" id="projectFilters" aria-label="Project filters"></div>
+        <div class="project-toolbar reveal">
+          <span>Filter by Capability</span>
+          <div class="project-filters" id="projectFilters" aria-label="Project filters"></div>
+        </div>
         <div class="projects-grid" id="projectsGrid"></div>
       </div>
     </section>
 
     <section class="section metrics-section" id="achievements">
-      <div class="metrics-backdrop" aria-hidden="true"></div>
       <div class="shell">
-        <div class="metrics-intro reveal">
-          <span class="section-kicker">04 / Performance snapshot</span>
-          <h2>Results that remain credible in an operating review.</h2>
+        <div class="metrics-header reveal">
+          <div>
+            <span class="section-kicker">04 / Performance snapshot</span>
+            <h2>Results that remain credible in an operating review.</h2>
+          </div>
+          <p>Selected improvements achieved through manufacturing-system design, process engineering, operational control, and cross-functional execution.</p>
         </div>
         <div class="metrics-grid">
-          <article class="metric reveal">
-            <strong><span class="counter" data-target="42" data-suffix="%">0</span></strong>
-            <p>Daily production output improvement</p>
-          </article>
-          <article class="metric reveal">
-            <strong><span class="counter" data-target="96" data-prefix="−" data-suffix="%">0</span></strong>
-            <p>Downtime reduction</p>
-          </article>
-          <article class="metric reveal">
-            <strong><span class="counter" data-target="94" data-prefix="−" data-suffix="%">0</span></strong>
-            <p>Missed-process reduction</p>
-          </article>
-          <article class="metric reveal">
-            <strong><span class="counter" data-target="15.8" data-suffix=" pts">0</span></strong>
-            <p>OEE improvement</p>
-          </article>
-          <article class="metric reveal">
-            <strong><span class="counter" data-target="91" data-prefix="−" data-suffix="%">0</span></strong>
-            <p>Unit manufacturing cost reduction during production scale-up</p>
-          </article>
+          <article class="metric reveal motion-card"><span>Output</span><strong><span class="counter" data-target="42" data-prefix="+" data-suffix="%">0</span></strong><p>Daily production output improvement</p></article>
+          <article class="metric reveal motion-card"><span>Reliability</span><strong><span class="counter" data-target="96" data-prefix="−" data-suffix="%">0</span></strong><p>Downtime reduction</p></article>
+          <article class="metric reveal motion-card"><span>Quality</span><strong><span class="counter" data-target="94" data-prefix="−" data-suffix="%">0</span></strong><p>Missed-process reduction</p></article>
+          <article class="metric reveal motion-card"><span>Effectiveness</span><strong><span class="counter" data-target="15.8" data-prefix="+" data-suffix=" pts">0</span></strong><p>OEE improvement</p></article>
+          <article class="metric reveal motion-card"><span>Cost</span><strong><span class="counter" data-target="91" data-prefix="−" data-suffix="%">0</span></strong><p>Unit manufacturing cost reduction during production scale-up</p></article>
         </div>
       </div>
     </section>
@@ -234,6 +240,7 @@
           <span class="section-kicker">05 / Career journey</span>
           <h2>Progressive responsibility across <span>quality, engineering, and production leadership.</span></h2>
           <p>A career developed through direct manufacturing exposure, process ownership, production management, and system-level operational improvement.</p>
+          <a class="text-link" href="Agung-Arimbawa-CV.pdf" download>Download full career profile <span>↓</span></a>
         </div>
         <div class="timeline" id="careerTimeline"></div>
       </div>
@@ -249,10 +256,10 @@
           <p>Practical engineering and management methods used to diagnose performance gaps, implement corrective systems, and sustain operational improvements.</p>
         </div>
         <div class="methods-grid">
-          <article class="method-card reveal"><span>01</span><h3>Lean Manufacturing</h3><p>Improve production flow through waste identification, standard work, workload balance, capacity alignment, visual control, and continuous improvement.</p></article>
-          <article class="method-card reveal"><span>02</span><h3>RCA & CAPA</h3><p>Use structured problem-solving to identify systemic causes, define corrective and preventive actions, assign ownership, and prevent recurrence.</p></article>
-          <article class="method-card reveal"><span>03</span><h3>OEE & KPI Control</h3><p>Control availability, performance, quality, downtime, capacity, throughput, losses, and management visibility through clearly defined operating metrics.</p></article>
-          <article class="method-card reveal"><span>04</span><h3>Production Leadership</h3><p>Translate business targets into practical daily execution through planning, workforce alignment, operating discipline, escalation, and cross-functional follow-up.</p></article>
+          <article class="method-card reveal motion-card"><span>01</span><div><h3>Lean Manufacturing</h3><p>Waste reduction, flow improvement, standard work, line balancing, and continuous improvement.</p></div></article>
+          <article class="method-card reveal motion-card"><span>02</span><div><h3>RCA & CAPA</h3><p>5 Why, Fishbone, corrective action, escalation routines, and abnormality prevention.</p></div></article>
+          <article class="method-card reveal motion-card"><span>03</span><div><h3>OEE & KPI Control</h3><p>Availability, performance, quality, downtime, capacity, output, and management visibility.</p></div></article>
+          <article class="method-card reveal motion-card"><span>04</span><div><h3>Production Leadership</h3><p>Daily execution, manpower arrangement, planning support, cost input, and cross-functional follow-up.</p></div></article>
         </div>
       </div>
     </section>
@@ -285,28 +292,28 @@
         </div>
 
         <div class="gallery-grid" id="galleryGrid">
-          <figure class="gallery-item gallery-tall reveal"><img src="assets/gallery/process-flow.svg" alt="Manufacturing process flow visualization" loading="lazy"><figcaption>Process flow optimization</figcaption></figure>
-          <figure class="gallery-item reveal"><img src="assets/gallery/oee-dashboard.svg" alt="Manufacturing performance dashboard visualization" loading="lazy"><figcaption>OEE & KPI management</figcaption></figure>
-          <figure class="gallery-item reveal"><img src="assets/gallery/quality-system.svg" alt="Manufacturing quality control system visualization" loading="lazy"><figcaption>Process quality controls</figcaption></figure>
-          <figure class="gallery-item gallery-wide reveal"><img src="assets/gallery/team-execution.svg" alt="Cross-functional manufacturing team visualization" loading="lazy"><figcaption>Cross-functional execution</figcaption></figure>
-          <figure class="gallery-item reveal"><img src="assets/gallery/process-map.svg" alt="Manufacturing process standardization visualization" loading="lazy"><figcaption>Operating standards</figcaption></figure>
-          <figure class="gallery-item reveal"><img src="assets/gallery/digital-factory.svg" alt="Digital manufacturing operations visualization" loading="lazy"><figcaption>Manufacturing visibility systems</figcaption></figure>
+          <figure class="gallery-item gallery-tall reveal motion-card"><img src="assets/gallery/process-flow.svg" alt="Manufacturing process flow visualization" loading="lazy"><figcaption><span>Manufacturing flow</span>Process flow optimization</figcaption></figure>
+          <figure class="gallery-item reveal motion-card"><img src="assets/gallery/oee-dashboard.svg" alt="Manufacturing performance dashboard visualization" loading="lazy"><figcaption><span>Performance management</span>OEE & KPI management</figcaption></figure>
+          <figure class="gallery-item reveal motion-card"><img src="assets/gallery/quality-system.svg" alt="Manufacturing quality control system visualization" loading="lazy"><figcaption><span>Quality systems</span>Process quality controls</figcaption></figure>
+          <figure class="gallery-item gallery-wide reveal motion-card"><img src="assets/gallery/team-execution.svg" alt="Cross-functional manufacturing team visualization" loading="lazy"><figcaption><span>Leadership</span>Cross-functional execution</figcaption></figure>
+          <figure class="gallery-item reveal motion-card"><img src="assets/gallery/process-map.svg" alt="Manufacturing process standardization visualization" loading="lazy"><figcaption><span>Standardization</span>Operating standards</figcaption></figure>
+          <figure class="gallery-item reveal motion-card"><img src="assets/gallery/digital-factory.svg" alt="Digital manufacturing operations visualization" loading="lazy"><figcaption><span>Digital operations</span>Manufacturing visibility systems</figcaption></figure>
         </div>
       </div>
     </section>
 
     <section class="section principles-section" id="testimonials">
-      <div class="shell">
-        <div class="section-heading centered-heading reveal">
+      <div class="shell principles-layout">
+        <div class="section-heading reveal">
           <span class="section-kicker">08 / Leadership signal</span>
           <h2>A management approach built on clarity, discipline, and execution.</h2>
           <p>Three principles that guide how manufacturing challenges are diagnosed, improved, and sustained.</p>
         </div>
         <div class="principles-carousel reveal" id="principlesCarousel">
           <div class="principles-track" id="principlesTrack">
-            <article class="principle-card"><span>01</span><blockquote>Start with actual operating conditions, quantify the performance gap, and identify the constraint that limits the entire system.</blockquote><p>Data-driven diagnosis</p></article>
-            <article class="principle-card"><span>02</span><blockquote>An improvement becomes valuable when the solution is converted into a clear, repeatable, and controlled operating method.</blockquote><p>System and standard design</p></article>
-            <article class="principle-card"><span>03</span><blockquote>Performance is sustained when engineering, production, quality, planning, materials, and leadership operate through one aligned management system.</blockquote><p>Cross-functional execution</p></article>
+            <article class="principle-card"><span>01 / Diagnose</span><blockquote>Start with the actual process, quantify the gap, and align the team around the most important constraint.</blockquote><p>Data-led diagnosis</p></article>
+            <article class="principle-card"><span>02 / Standardize</span><blockquote>Corrective action is only complete when the improved method becomes a repeatable operating standard.</blockquote><p>Standardization mindset</p></article>
+            <article class="principle-card"><span>03 / Execute</span><blockquote>Strong performance comes from engineering, production, quality, material, and leadership executing one system.</blockquote><p>Cross-functional execution</p></article>
           </div>
           <div class="carousel-controls">
             <button id="prevPrinciple" type="button" aria-label="Previous principle">←</button>
@@ -318,34 +325,58 @@
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="contact-glow" aria-hidden="true"></div>
-      <div class="shell contact-layout">
-        <div class="contact-copy reveal">
+      <div class="shell contact-panel reveal">
+        <div class="contact-copy">
           <span class="section-kicker">09 / Contact</span>
-          <h2>Ready to strengthen your <span>manufacturing system.</span></h2>
+          <h2>Ready to strengthen your manufacturing system.</h2>
           <p>Open to leadership opportunities and transformation assignments in Manufacturing Engineering, Production Management, Operational Excellence, Plant Operations, Process Engineering, and Continuous Improvement.</p>
           <div class="contact-links">
-            <a href="mailto:great.arimbawa@gmail.com"><span>Email</span><strong>great.arimbawa@gmail.com</strong></a>
-            <a href="https://wa.me/6282118276538" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+62 821 1827 6538</strong></a>
+            <a href="mailto:great.arimbawa@gmail.com"><span>Email</span><strong>great.arimbawa@gmail.com</strong><i>↗</i></a>
+            <a href="https://wa.me/6282118276538" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+62 821 1827 6538</strong><i>↗</i></a>
             <div><span>Location</span><strong>Bandung Regency, West Java</strong></div>
           </div>
         </div>
 
+        <form class="contact-form" id="contactForm" aria-label="Contact Agung Arimbawa">
+          <label><span>Name</span><input type="text" name="name" autocomplete="name" required placeholder="Your name" /></label>
+          <div class="form-row">
+            <label><span>Email</span><input type="email" name="email" autocomplete="email" required placeholder="name@company.com" /></label>
+            <label><span>Company</span><input type="text" name="company" autocomplete="organization" placeholder="Company name" /></label>
+          </div>
+          <label><span>Message</span><textarea name="message" rows="5" required placeholder="Tell Agung about the role, manufacturing challenge, or performance priority."></textarea></label>
+          <button class="button button-primary" type="submit">Prepare email <span>→</span></button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div><strong>Agung Arimbawa</strong><span>Manufacturing Engineering & Operational Excellence</span></div>
-      <p>© <span id="currentYear"></span> Agung Arimbawa. Built for GitHub Pages.</p>
-      <a href="#home">Back to top ↑</a>
+    <div class="shell footer-main">
+      <div class="footer-brand">
+        <span class="brand-mark">AA</span>
+        <div><strong>Agung Arimbawa</strong><span>Manufacturing Engineering & Operational Excellence</span></div>
+      </div>
+      <div class="footer-nav">
+        <span>Navigate</span>
+        <a href="#about">Profile</a><a href="#expertise">Expertise</a><a href="#projects">Impact</a><a href="#career">Career</a>
+      </div>
+      <div class="footer-contact">
+        <span>Connect</span>
+        <a href="mailto:great.arimbawa@gmail.com">Email</a>
+        <a href="https://wa.me/6282118276538" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="Agung-Arimbawa-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>© <span id="currentYear"></span> Agung Arimbawa. Manufacturing Engineering & Operational Excellence.</p>
+      <a href="#home">Back to top <span>↑</span></a>
     </div>
   </footer>
 
   <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
     <button class="modal-close" id="modalClose" type="button" aria-label="Close project details">×</button>
-    <div class="modal-visual" id="modalVisual"></div>
+    <div class="modal-visual" id="modalVisual"><span>Operational case study</span><strong id="modalVisualMetric"></strong></div>
     <div class="modal-content">
       <span class="modal-label" id="modalLabel"></span>
       <h2 id="modalTitle"></h2>
@@ -361,6 +392,9 @@
     </div>
   </dialog>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/motion@12.42.2/dist/motion.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

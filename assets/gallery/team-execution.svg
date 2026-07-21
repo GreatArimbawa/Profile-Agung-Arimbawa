@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset=".5" stop-color="#1e3a8a"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
-  <rect width="1200" height="700" fill="url(#g)"/>
-  <g stroke="#fff" stroke-opacity=".22" fill="none"><path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200M0 600H1200"/><path d="M100 0V700M200 0V700M300 0V700M400 0V700M500 0V700M600 0V700M700 0V700M800 0V700M900 0V700M1000 0V700M1100 0V700"/></g>
-  <g fill="#fff"><circle cx="300" cy="330" r="75" opacity=".92"/><circle cx="600" cy="220" r="75" opacity=".82"/><circle cx="900" cy="360" r="75" opacity=".72"/></g>
-  <g stroke="#5eead4" stroke-width="8" fill="none"><path d="M370 305 525 245M675 245 825 335M375 365 825 385"/></g>
-  <text x="90" y="590" fill="#fff" font-family="Arial" font-size="70" font-weight="700">CROSS-FUNCTIONAL EXECUTION</text><text x="95" y="640" fill="#bfdbfe" font-family="Arial" font-size="24">Engineering • Production • Quality • Materials</text>
+  <rect width="1200" height="700" fill="#f7f9fc"/>
+  <rect x="45" y="45" width="1110" height="610" rx="34" fill="#fff" stroke="#e2e6ec"/>
+  <g stroke="#1e3a8a" stroke-opacity=".06" fill="none"><path d="M80 130H1120M80 230H1120M80 330H1120M80 430H1120M80 530H1120"/><path d="M180 80V620M380 80V620M580 80V620M780 80V620M980 80V620"/></g>
+  <g fill="#1e3a8a"><circle cx="300" cy="310" r="68"/><circle cx="600" cy="205" r="68" fill="#0f766e"/><circle cx="900" cy="340" r="68" fill="#4462a7"/></g>
+  <g stroke="#0f766e" stroke-width="8" fill="none" stroke-linecap="round"><path d="M365 288 532 228M668 230 834 315M368 348 832 365"/></g>
+  <text x="95" y="585" fill="#111827" font-family="Arial" font-size="62" font-weight="700">CROSS-FUNCTIONAL EXECUTION</text><text x="100" y="630" fill="#4b5563" font-family="Arial" font-size="22">Engineering • Production • Quality • Materials</text>
 </svg>

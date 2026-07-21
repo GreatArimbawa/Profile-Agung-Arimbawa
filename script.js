@@ -29,7 +29,7 @@ const projects = [
     solution: "Rebalanced production activities, strengthened readiness controls, improved resource allocation, clarified process ownership, and standardized critical operating routines.",
     impact: "Daily output increased from 1,200 to 1,700 units, while production capacity increased from 420 to 630 units per day per line.",
     tags: ["Capacity Planning", "Process Flow", "Line Balancing", "Standard Work"],
-    gradient: "linear-gradient(135deg,#172554 0%,#1d4ed8 48%,#0f766e 100%)"
+    gradient: "linear-gradient(145deg,#eef3ff 0%,#e4ebf9 52%,#e8f4f1 100%)"
   },
   {
     id: "oee-recovery",
@@ -44,7 +44,7 @@ const projects = [
     solution: "Strengthened readiness verification, planning visibility, operational ownership, abnormality escalation, and shop-floor response standards.",
     impact: "Downtime decreased from 79.2 hours to 3.4 hours, while OEE improved from 69.4% to 85.2%.",
     tags: ["OEE", "Downtime Reduction", "Operational Reliability", "Performance Control"],
-    gradient: "linear-gradient(135deg,#052e2b 0%,#0f766e 48%,#1d4ed8 100%)"
+    gradient: "linear-gradient(145deg,#e9f5f2 0%,#edf6f3 54%,#e9effb 100%)"
   },
   {
     id: "quality-reduction",
@@ -74,7 +74,7 @@ const projects = [
     solution: "Supported equipment investment, redesigned the operating method, established required resources, stabilized the manufacturing process, and strengthened cost control.",
     impact: "Production output scaled from 200 grams per day to 25 kilograms per day, while unit cost decreased from Rp1,011 per gram to Rp93 per gram.",
     tags: ["Production Scale-up", "Cost Reduction", "Resource Optimization", "Production Management"],
-    gradient: "linear-gradient(135deg,#422006 0%,#b45309 48%,#065f46 100%)"
+    gradient: "linear-gradient(145deg,#fbf4e8 0%,#f8f3e9 48%,#eaf4ef 100%)"
   },
   {
     id: "digital-control",
@@ -89,7 +89,7 @@ const projects = [
     solution: "Developed a production-control portal concept connecting workforce data, skill records, operational monitoring, and standardized management reporting.",
     impact: "Created a foundation for faster operational visibility, improved traceability, stronger workforce-capability control, and more consistent reporting.",
     tags: ["Digital Manufacturing", "Production Control", "Skill Matrix", "Management Dashboard"],
-    gradient: "linear-gradient(135deg,#111827 0%,#1e3a8a 50%,#0f766e 100%)"
+    gradient: "linear-gradient(145deg,#edf2fb 0%,#e8eef8 50%,#e8f4f1 100%)"
   },
   {
     id: "process-flow",
@@ -104,7 +104,7 @@ const projects = [
     solution: "Redesigned work methods and improved process flow to use the existing equipment base more effectively.",
     impact: "Production output increased from 2.0 tons per day to 2.25 tons per day without adding new machines.",
     tags: ["Process Flow", "Methods Engineering", "Capacity Improvement", "Asset Utilization"],
-    gradient: "linear-gradient(135deg,#2e1065 0%,#6d28d9 48%,#1d4ed8 100%)"
+    gradient: "linear-gradient(145deg,#f1effa 0%,#eff1f8 50%,#e9f1fb 100%)"
   },
   {
     id: "process-nonconformity",
@@ -119,7 +119,7 @@ const projects = [
     solution: "Implemented systemic corrective actions and standardized improved process methods across production operations.",
     impact: "Process nonconformities decreased from 96 cases per year to 6 cases per year.",
     tags: ["Process Control", "RCA", "Standardization", "Quality Systems"],
-    gradient: "linear-gradient(135deg,#1f2937 0%,#334155 46%,#0f766e 100%)"
+    gradient: "linear-gradient(145deg,#eef1f4 0%,#eef3f4 46%,#e8f4f1 100%)"
   },
   {
     id: "kpi-control",
@@ -134,7 +134,7 @@ const projects = [
     solution: "Connected daily operational data with structured management reviews, performance visibility, and corrective-action discipline.",
     impact: "Average capacity reached 455.68 units per day per line against a target of 420, while missed process remained below the 0.25% target during January–April 2026.",
     tags: ["KPI Management", "Capacity Control", "Management Reporting", "Data-driven Decisions"],
-    gradient: "linear-gradient(135deg,#082f49 0%,#0369a1 48%,#14b8a6 100%)"
+    gradient: "linear-gradient(145deg,#eaf4f5 0%,#e8f1f5 48%,#edf2fb 100%)"
   }
 ];
 
@@ -202,7 +202,7 @@ const qsa = (selector, scope = document) => [...scope.querySelectorAll(selector)
 
 function renderSkills() {
   qs("#skillsGrid").innerHTML = skills.map(skill => `
-    <article class="skill-card reveal" style="--level:${skill.level}%;--accent:${skill.accent}">
+    <article class="skill-card reveal motion-card" style="--level:${skill.level}%;--accent:${skill.accent}">
       <span class="skill-icon">${skill.code}</span>
       <h3>${skill.title}</h3>
       <p>${skill.text}</p>
@@ -229,7 +229,7 @@ function renderProjectFilters() {
 function renderProjects(filter = "All") {
   const filtered = filter === "All" ? projects : projects.filter(project => project.category === filter);
   qs("#projectsGrid").innerHTML = filtered.map(project => `
-    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open ${project.title} case study" data-project-id="${project.id}" style="--project-gradient:${project.gradient}">
+    <article class="project-card reveal motion-card" tabindex="0" role="button" aria-label="Open ${project.title} case study" data-project-id="${project.id}" style="--project-gradient:${project.gradient}">
       <div class="project-visual">
         <span class="project-code">${project.code}</span>
         <strong class="project-big-metric">${project.metric}</strong>
@@ -256,7 +256,8 @@ function renderProjects(filter = "All") {
       }
     });
   });
-  observeReveals();
+  setupGsapAnimations();
+  setupMotionInteractions(qs("#projectsGrid"));
 }
 
 function openProject(id) {
@@ -267,6 +268,8 @@ function openProject(id) {
   qs("#modalLabel").textContent = `${project.category} • ${project.period}`;
   qs("#modalTitle").textContent = project.title;
   qs("#modalSummary").textContent = project.summary;
+  const mv = qs("#modalVisualMetric");
+  if (mv) mv.textContent = project.metric;
   qs("#modalMetric").textContent = project.metric;
   qs("#modalChallenge").textContent = project.challenge;
   qs("#modalApproach").textContent = project.approach;
@@ -640,6 +643,7 @@ function setupContactForm() {
 function setupParticles() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const canvas = qs("#particleCanvas");
+  if (!canvas) return;
   const context = canvas.getContext("2d");
   let width = 0;
   let height = 0;
@@ -681,7 +685,7 @@ function setupParticles() {
       if (particle.y < 0 || particle.y > height) particle.vy *= -1;
 
       context.beginPath();
-      context.fillStyle = index % 4 === 0 ? "rgba(20,184,166,.8)" : "rgba(148,184,255,.65)";
+      context.fillStyle = index % 4 === 0 ? "rgba(15,118,110,.46)" : "rgba(30,58,138,.34)";
       context.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2);
       context.fill();
 
@@ -690,7 +694,7 @@ function setupParticles() {
         const linkDistance = Math.hypot(particle.x - other.x, particle.y - other.y);
         if (linkDistance < 100) {
           context.beginPath();
-          context.strokeStyle = `rgba(100,145,220,${.09 * (1 - linkDistance / 100)})`;
+          context.strokeStyle = `rgba(30,58,138,${.055 * (1 - linkDistance / 100)})`;
           context.lineWidth = .5;
           context.moveTo(particle.x, particle.y);
           context.lineTo(other.x, other.y);
@@ -721,12 +725,66 @@ function setupMagneticButtons() {
   });
 }
 
+
+function setupGsapAnimations() {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) {
+    qsa(".reveal").forEach(el => el.classList.add("is-visible"));
+    return false;
+  }
+  if (!(window.gsap && window.ScrollTrigger)) {
+    observeReveals();
+    return false;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  qsa(".hero-animate").length && gsap.from(".hero-animate", {
+    y: 18,
+    duration: .62,
+    stagger: .06,
+    ease: "power3.out",
+    clearProps: "transform"
+  });
+
+  qsa(".reveal").forEach(element => {
+    gsap.fromTo(element,
+      { y: 22 },
+      {
+        y: 0,
+        duration: .62,
+        ease: "power3.out",
+        scrollTrigger: { trigger: element, start: "top 88%", once: true },
+        onComplete: () => {
+          element.classList.add("is-visible");
+          gsap.set(element, { clearProps: "transform" });
+        }
+      }
+    );
+  });
+  return true;
+}
+
+function setupMotionInteractions(scope = document) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion || !(window.Motion && window.Motion.animate)) return;
+  qsa(".motion-card", scope).forEach(card => {
+    if (card.dataset.motionBound === "true") return;
+    card.dataset.motionBound = "true";
+    card.addEventListener("pointerenter", () => {
+      Motion.animate(card, { transform: "translateY(-4px) scale(1.002)" }, { duration: .28, easing: [0.22, 1, 0.36, 1] });
+    });
+    card.addEventListener("pointerleave", () => {
+      Motion.animate(card, { transform: "translateY(0px) scale(1)" }, { duration: .34, easing: [0.22, 1, 0.36, 1] });
+    });
+  });
+}
+
 function init() {
   renderSkills();
   renderProjectFilters();
   renderProjects();
   renderCareer();
-  observeReveals();
+  setupGsapAnimations();
   setupCounters();
   setupHeaderAndNavigation();
   setupMobileMenu();
@@ -736,6 +794,7 @@ function init() {
   setupContactForm();
   setupParticles();
   setupMagneticButtons();
+  setupMotionInteractions();
   qs("#currentYear").textContent = new Date().getFullYear();
 }
 
