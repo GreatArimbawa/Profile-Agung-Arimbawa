@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-  <rect width="800" height="800" fill="#f4f8f7"/>
-  <rect x="55" y="55" width="690" height="690" rx="38" fill="#fff" stroke="#e2e6ec"/>
-  <g fill="none" stroke="#1e3a8a" stroke-width="6" stroke-linejoin="round"><path d="M120 530V305l145-80v80l150-80v115h190v190Z"/><path d="M190 530V410h100v120M460 410h82v120"/></g>
-  <g fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round"><circle cx="560" cy="195" r="72"/><path d="M560 123V85M560 305v-38M488 195h-38M670 195h-38M509 144l-27-27M638 273l-27-27M611 144l27-27M509 246l-27 27"/></g>
-  <text x="106" y="666" fill="#111827" font-family="Arial" font-size="54" font-weight="700">DIGITAL FACTORY</text><text x="109" y="715" fill="#4b5563" font-family="Arial" font-size="20">Portal • Dashboard • Skill Matrix</text>
-</svg>
